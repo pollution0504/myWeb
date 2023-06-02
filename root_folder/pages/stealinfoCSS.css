@@ -1,0 +1,94 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+body
+{
+    display: flex; /* Puts text on either the same plane or makes blocks of txt*/
+    justify-content: center; /* puts it on the left, center, or right of website*/
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+    background: #ff7772;
+    color: rgb(0, 0, 0);
+} 
+.inputBox
+{
+    position: relative; /* centers text box!! */
+    width: 250px;
+}
+.inputBox input
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    background: #ff7772;
+    outline: none;
+    color: white;
+    font-size: small;
+}
+.inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none; /* makes it so that it goes through it */
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0. 25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.inputBox input:valid ~span,
+.inputBox input:focus ~span
+{
+    color: white;
+    transform: translateX(10px) translateY(-7px);
+    transition: 0.5s;
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #ff7772;
+}
+h4
+{
+    font-size: x-small;
+    color: gray;
+}
+dont
+{
+    align-items: center;
+}
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(244, 201, 201);
+}
+ul {
+    margin-left: 60px;
+}
+ul li {
+    list-style: none;
+    display: inline-block; /* puts it all on one line ?? */
+    float: left; /* Puts text on left or right or center of screen */
+    line-height: 50px;
+}
+ul li a {
+    text-decoration: dashed;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #1e1e1e;
+    padding: 0 20px; /* padding from the bar, padding from each text */
+}
+
+ul li a:hover {
+    transition: 0.4s;
+    color: red;
+    font-size: large;
+}
+feefee
+{
+    
+}
