@@ -1,0 +1,63 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+body
+{
+    display: flex; /* Puts text on either the same plane or makes blocks of txt*/
+    justify-content: center; /* puts it on the left, center, or right of website*/
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+    background: #5d0909;
+    color: rgb(255, 0, 0);
+} 
+.inputBox
+{
+    position: relative; /* centers text box!! */
+    width: 250px;
+}
+.inputBox input
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #5d0909;
+    outline: none;
+    color: white;
+    font-size: small;
+}
+.inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none; /* makes it so that it goes through it */
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0. 25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.inputBox input:valid ~span,
+.inputBox input:focus ~span
+{
+    color: white;
+    transform: translateX(10px) translateY(-7px);
+    transition: 0.5s;
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #5d0909;
+}
+h4
+{
+    font-size: x-small;
+    color: gray;
+}
+dont
+{
+    align-items: center;
+}

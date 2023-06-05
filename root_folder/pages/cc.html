@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="ccCSS.css">
+<head>
+    <title>Chawin the Rarin</title>
+</head>
+<body>
+    <div class="poop">
+        <nav>
+            <ul>
+                <li><a href='../index.html'>Home</a></li>
+                <li><a href='stealinfo.html'>Steal Your Info</a></li>
+                <li><a href='cc.html'>Cookie Clicker</a></li>
+                <li><a href='contact.html'>Goals</a></li>
+            </ul>
+       </nav>
+    </div>
+    <marquee><h1>NUTELLA CLICKER</h1></marquee>
+    <center><img src="nutella.png" id = "Oreo" alt="Cookie Oreo Oreo Cookie mmmm" onclick="increase()" width="400px"></center>
+    <p>Oreo Click yay?: <span id = "counter">0</span></p>
+    <button id = "reset" onclick = "reset()">Reset</button>
+    <button id = "multiply" onclick = "multiply(2)">Multiply</button>
+</body>
+    <script>
+        var clicks = 0;
+        var OPC = 1;
+        var sam;
+        function increase(){
+            clicks = clicks + OPC;
+            counter.innerHTML = clicks;
+        }
+        function reset(){
+            clicks = 0;
+            OPC = 1;
+            counter.innerHTML = clicks;
+        }
+        function multiply(sam){
+            OPC+=1;
+        }
+        
+    </script>
+</html>
